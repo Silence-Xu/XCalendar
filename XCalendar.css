@@ -1,0 +1,200 @@
+#div_calendar {
+	margin:0 auto;
+	width: 270px; 
+	height: 62px;
+}
+
+div,select,p {
+	font-size: 14px;
+	color:#000;
+}
+
+select{
+	/*所有主流浏览器都不支持 appearance 属性，
+	 *Firefox 支持替代的 -moz-appearance 属性，
+	 *Safari 和 Chrome 支持替代的 -webkit-appearance 属性。
+	 */
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	border:0;
+	width: auto;
+	height: 24px;
+	background: transparent;
+}
+select:hover{
+	background: #fed;
+
+}
+
+/*日历标题头*/
+div#date {
+	width:500px;
+	height: 40px;
+	line-height: 40px;
+	border: 0; 
+	background-color: #fd9;
+}
+div#calendar {
+	float:left;
+	text-align:center;
+	width:500px;
+	height:auto;
+}
+
+/*改变年月  回到今天*/
+div#panel {
+	width: 500px;
+	height: 24px;
+	border:0;
+	border-top: 1px solid #f57;
+	border-bottom: 1px solid #f57;
+}
+div#panel span {
+	display: block;
+	width: 98px;
+	height: 24px;
+	line-height: 24px;
+	background:#fd9;
+	border:1px solid #fff;
+	border-bottom: 0;
+	border-top: 0;
+	font-size:12px;
+	cursor:pointer;
+	float: left;
+	text-align:center;
+}
+div#panel span:hover{
+	background:#feb;
+}
+
+/*日期table*/
+
+#calendarContent {
+	width: 500px;
+	height:auto;
+	color: #666;
+	border: 0;
+	margin:0;
+	background-color: #fd9;
+	
+}
+/*星期*/
+#calendarContent tr th {
+	width:70px;
+	height: 36px;
+	font-family:"宋体",serif;
+	font-size:19px;
+	text-align: center;
+}
+
+
+
+/*阳历日期*/
+.tr1 td{
+	background-color: #fd9;
+	font-size: 24px;
+	text-align: center;
+}
+.tr1 td:hover{
+	background: #fb6;
+}
+
+/*农历日期*/
+.tr2 td{
+	background-color: #fec;
+	font-size: 13px;
+	text-align: center;
+}
+
+/*显示日期的input*/
+#dateText{
+	float: left;
+	width: 180px;
+	height: 30px;
+	border:1px solid #f57;
+	padding: 0 5px;
+	line-height: 30px;
+	font-size: 17px;
+}
+.input_button{
+	float: left;
+	width: 90px;
+	height: 30px;
+	border:1px solid #f57;
+	background-color: #fea;
+	font-size: 15px;
+}
+
+/*不同星期的日期*/
+.seven {
+	font-size: 20px;
+	color: #555;
+	font-family: "宋体",serif;
+	font-weight: bold;
+}
+.six {
+	font-size: 20px;
+	color: #555;
+	font-weight: bold;
+}
+.workday {
+	font-family: "宋体",serif;
+	font-size: 20px;
+	color: #000;
+	font-weight: normal;
+}
+
+/*detail的位置*/
+div#detail {
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	border:1px solid #f34;
+}
+/*detail的大小背景*/
+div#datedetail {
+	width: 130px; 
+	border: 0; 
+	margin: 0; 
+	font-size: 13px;
+	background-color:#fea; 
+	text-align:right; 
+}
+/*detail 农历年月日，天干地支年月日*/
+div#datedetail span {
+	color: #666;
+}
+/*detail里的节日样式*/
+div#festival {
+	color: #8a8; 
+	width: 130px; 
+	margin: 0; 
+	background-color: #fc8; 
+}
+
+/*关闭日历*/
+#close{
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right: 10px;
+	color: #767;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#close:hover{
+	color:#fff;
+}
+#close2{
+	font-size: 16px;
+	height: 25px;
+	color:#767;
+	font-weight: bold;
+}
+#close2:hover{
+	color:#fff;
+}
